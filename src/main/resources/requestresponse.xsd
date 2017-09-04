@@ -1,0 +1,22 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:tns="http://vivek.com/soap/gs-producing-web-service"
+	targetNamespace="http://vivek.com/soap/gs-producing-web-service"
+	elementFormDefault="qualified">
+
+	<xs:element name="inputRequest">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="ediId" type="xs:int" />
+				<xs:element name="requestXML" type="xs:string" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="outputResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="responseXML" type="xs:string" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
